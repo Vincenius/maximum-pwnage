@@ -1,0 +1,175 @@
+:root {
+  --color-page-background: #45b5f3;
+  --color-link-background: white;
+  --color-link-shadow: #0081c7;
+  --funky-button-width: 240px;
+  --funky-button-height: 70px;
+}
+
+body, html {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// https://projects.verou.me/css3patterns/
+.background0 {
+  background: radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+    radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+    radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+    radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+  background-color: #b03;
+  background-size: 100px 100px;
+  --headline-color: #fff;
+}
+
+.background1 {
+  background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+    radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+    #8a3;
+  background-size: 20px 20px;
+  --headline-color: #000;
+}
+
+.background2 {
+  background-color: silver;
+  background-image: radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px;
+  --headline-color: #000;
+}
+
+.background3 {
+  background: radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
+    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+  background-size: 40px 60px;
+  --headline-color: #000;
+}
+
+.background4 {
+  background-color: #556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  --headline-color: #fff;
+}
+
+.background5 {
+  background: linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+  background-color: #e1ebbd;
+  background-size: 128px 128px;
+  --headline-color: #000;
+}
+
+h1 {
+  font-family: 'Frijole', cursive;
+  text-align: center;
+  font-size: 96px;
+  color: var(--headline-color);
+  margin-top: 0;
+}
+
+.button-container {
+  display: flex;
+
+  font-family: 'ZCOOL KuaiLe', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button {
+  --clip: polygon(
+    var(--clip-offset-1, 0px) var(--clip-offset-2, 0px),
+    calc(100% - var(--clip-offset-3, 0px)) var(--clip-offset-4, 0px),
+    calc(100% - var(--clip-offset-5, 0px)) calc(100% - var(--clip-offset-6, 0px)),
+    var(--clip-offset-7, 0px) calc(100% - var(--clip-offset-8, 0px))
+  );
+  position: relative;
+  background: unset;
+  border: none;
+  width: var(--funky-button-width);
+  height: var(--funky-button-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1.5em;
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+  margin: 0 30px;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-link-background);
+  clip-path: var(--clip);
+  z-index: -1;
+}
+
+button::before {
+  background-color: var(--color-link-shadow);
+  transform: translate3d(7px, 5px, 0px);
+}
+
+button span {
+  display: inline-block;
+}
+
+button:is(:hover, :focus-visible)::after,
+button:is(:hover, :focus-within) span {
+  transform: translate3d(-2px, -2px, 0px) scale(1.02);
+}
+
+button:is(:hover, :focus-visible)::before {
+  transform: translate3d(7px, 6px, 0px) scale(1.02);
+}
+
+.facebook-button::after {
+  background-image: url( '/imgs/facebook.svg' );
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 150%, 100%;
+}
+
+.spotify-button::after {
+  background-image: url( '/imgs/spotify.svg' );
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 150%, 100%;
+}

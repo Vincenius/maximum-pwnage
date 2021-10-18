@@ -1,15 +1,7 @@
-# webshop-mock
-
-This is a dummy store to showcase the VAI Pay Checkout option.
+# MAXIMUM PWNAGE
 
 
-## setup
+https://fonts.google.com/specimen/Just+Me+Again+Down+Here?preview.text=Maximum%20Pwnage%20MAXIMUM%20PWNAGE&preview.text_type=custom
 
-Install dependencies with `npm i --save`
+https://jsfiddle.net/hLwxratf/
 
-Run and watch for changes `npm run watch`
-
-
-## TODO
-
-explain how to setup the vai pay checkout in a real store

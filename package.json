@@ -1,7 +1,7 @@
 {
-  "name": "webshop-mock",
+  "name": "maximum-pwnage",
   "version": "1.0.0",
-  "description": "A simple dummy shop to showcase the VAI Checkout",
+  "description": "The official website of the band Maximum Pwnage",
   "main": "index.js",
   "scripts": {
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vai-trade/webshop-mock.git"
+    "url": "git+https://github.com/vincenius/maximum-pwnage.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vai-trade/webshop-mock/issues"
+    "url": "https://github.com/vincenius/maximum-pwnage/issues"
   },
-  "homepage": "https://github.com/vai-trade/webshop-mock#readme",
+  "homepage": "https://maximumpwnage.de",
   "devDependencies": {
     "@babel/preset-env": "^7.15.8",
     "autoprefixer": "^10.3.7",
