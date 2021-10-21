@@ -17,7 +17,9 @@
     "watch:html": "onchange \"src/views\" -- npm run build:html",
     "watch:images": "onchange \"src/imgs\" -- npm run build:images",
     "watch:js": "onchange \"src/js\" -- webpack --mode=development",
-    "watch": "run-p serve watch:*"
+    "watch": "run-p serve watch:*",
+    "deploy": "aws s3 sync ./dist s3://maximum-pwnage-bucket",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id=EBX6B66GQUOC0 --paths /"
   },
   "repository": {
     "type": "git",

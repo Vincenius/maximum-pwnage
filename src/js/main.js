@@ -1,9 +1,9 @@
-const getRandomInt = max => Math.floor(Math.random() * max);
-const backgroundClass = `background${getRandomInt(6)}`
+const randomBg = () => {
+  const getRandomInt = max => Math.floor(Math.random() * max);
+  const backgroundClass = `background${getRandomInt(6)}`
 
-document.querySelector('header').className += backgroundClass
-
-
+  document.querySelector('header').className += backgroundClass
+}
 
 const shuffle = (arr) => {
   for (let i = arr.length - 1; i > 0; i--) {
@@ -23,6 +23,7 @@ const randomizeClipOffsets = (selector, offsets = [0, 0, 1, 3, 3, 4, 5, 6]) => {
 }
 
 const init = () => {
+  randomBg();
   randomizeClipOffsets('button');
   setInterval(randomizeClipOffsets, 350, 'button:is(:hover, :focus-visible)');
 }

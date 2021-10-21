@@ -173,3 +173,20 @@ button:is(:hover, :focus-visible)::before {
   background-size: 60%;
   background-position: 150%, 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+  h1 { font-size: 68px; }
+}
+
+@media screen and (max-width: 569px) {
+  h1 { font-size: 40px; }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-container button:first-child{
+    margin-bottom: 20px;
+  }
+}
